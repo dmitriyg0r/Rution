@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.notes-list {
+    margin-top: 20px;
+}
+
+.note-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.note-item:hover {
+    background-color: #eee;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#noteTitle {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#noteContent {
+    padding: 10px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+} 
